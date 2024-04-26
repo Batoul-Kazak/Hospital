@@ -1,0 +1,17 @@
+Rooms => reserve room button for each card (room which is not availaible won't appear)
+Doctor =>  1.prevent select any element in the page when a Doctor_name_button clicked 
+Patients => 1.program it    2.fix the navbar + add a nav or a center div to display all patients    3.program it to give random values for each patient
+Sign in => fix its appearance
+
+
+
+let IsBooked = ["booked", "avaliable"].Math.floor(Math.random() * 2);
+
+  if (IsBooked) {
+        DOCTOR_BOOKED.innerText = "booked";
+        DOCTOR_BOOKED.className = "booked";
+    }
+    else {
+        DOCTOR_BOOKED.innerText = "available";
+        DOCTOR_BOOKED.className = "available";
+    }

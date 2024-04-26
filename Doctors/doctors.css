@@ -1,0 +1,311 @@
+body {
+    background-image: url("../Images/1686122666959.jpg");
+    background-color: #FFF;
+    background-position: right;
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+
+#medical-specialties-container,
+#doctors-container,
+#rooms-type-container,
+#rooms-type-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+
+    color: #FFF;
+
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#disease-info-modal {
+    /* background-image: linear-gradient(30deg, #0059ff, #215cc0); */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+
+    transition: transform 0.5s;
+
+    padding: 20px;
+}
+
+/* 
+#disease-info-modal input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+
+    font-size: 15px;
+} */
+
+#medical-specialties-container button,
+#doctors-container button,
+.specialties-buttons {
+    padding: 0;
+    font-family: inherit;
+
+    width: 200px;
+    background-color: #11c3e2;
+
+    padding: 20px 5px;
+    font-weight: bold;
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+#medical-specialties-container button:hover,
+#doctors-container button:hover,
+.specialties-buttons:hover,
+#rooms-type-container button:hover {
+    background-image: linear-gradient(30deg, #cdd8fa, #82f0ff);
+    color: #00008091;
+}
+
+.clicked {
+    transform: translate(-50%, -12.5%);
+}
+
+/* 
+#disease-info-modal.animate {
+    animation-name: disease-info-modal-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction:normal ;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+} */
+
+#disease-info-modal button {
+    width: 100px;
+    height: 30px;
+
+    background-color: rgb(167, 50, 114);
+
+    font-weight: bold;
+}
+
+/* 
+@keyframes disease-info-modal-animation {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        background-color: red;
+    }
+
+    to {
+        transform: translate(-50%, -10%);
+        opacity: 1;
+        background-color: rgb(65, 110, 206);
+    }
+} */
+
+#disease-info-modal textarea {
+    resize: none;
+    display: block;
+}
+
+#disease-info-modal>section {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+}
+
+#doctor-information {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+    background-image: linear-gradient(30deg, #11c3e2d7, #fff);
+
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: start;
+    gap: 20px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    border: 5px dashed #393bb6;
+
+    z-index: 2 !important;
+}
+
+#doctor-information div {
+    margin-top: -10px;
+
+    color: #182853;
+}
+
+/* 
+#doctor-information.animate {
+    animation-name: doctor-information-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+} */
+/* 
+@keyframes doctor-information-animation {
+
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        background-color: red;
+    }
+
+    to {
+        transform: translate(-50%, -10%);
+        opacity: 1;
+        background-color: rgb(65, 110, 206);
+    }
+} */
+
+#doctor-information #close {
+    /* background-color: #51ff00; */
+    background-image: url("../Images/1686124268208.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 8%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+    width: 30px;
+    height: 30px;
+}
+
+#doctor-information .doctor-img {
+    background-color: #FFF;
+    border: 2px solid black;
+    border-radius: 10%;
+
+    width: 80px;
+    aspect-ratio: 1;
+
+    background-image: url("../Images/doctor_female_100px.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.booked {
+    color: #b34b06 !important;
+    font-weight: bold !important;
+}
+
+.available {
+    color: #37910d !important;
+    font-weight: bold !important;
+}
+
+.title {
+    font-weight: bold;
+}
+
+#rooms-body {
+    background-image: url("../Images/");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 700px;
+}
+
+.specialties-images {
+    width: 30px;
+    height: 20px;
+}
+
+#medical-specialties-container #main {
+    padding: 15px;
+    width: auto;
+
+    color: #b14700;
+}
+
+#medical-specialties-container #main:hover {
+    color: rgb(255, 60, 0);
+}
+
+.radius {
+    border-radius: 100%;
+    margin-left: 4px;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(94, 71, 71);
+
+    font-size: 16px;
+}
+
+#doctor-information div {
+    font-size: 14px;
+}
+
+/* 
+.cover {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.603);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1 !important;
+} */
+
+.reserve {
+    display: flex;
+    place-content: center;
+    place-items: center;
+
+    padding: 10px;
+
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+
+    background-image: linear-gradient(30deg, #456, #786);
+
+    box-shadow: 5px 5px 5px #666;
+}
+
+/* 
+.reserve:hover {
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    transform: translate(-50%, -50%);
+} */

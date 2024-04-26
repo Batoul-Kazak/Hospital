@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Patients</title>
+
+    <link rel="stylesheet" href="../globalStyle.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="../Patients/patients.css" />
+    <script defer src="../navbar.js"></script>
+    <script defer src="patients.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <button id="open-nav-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      <h3>Al-Salam Hospital</h3>
+
+      <div class="button-displayer">
+        <a href="../Sign up/signUp.html"
+          ><button id="sign-up">Sign up</button></a
+        >
+        <a href="../Login/login.html"> <button id="login">Login</button></a>
+      </div>
+
+      <nav id="nav" class="closed">
+        <button id="close-nav-button">
+          <div></div>
+          <div></div>
+        </button>
+
+        <a href="../index/index.html">Home</a>
+        <a href="../Doctors/doctors.html">Doctors</a>
+        <a href="../Rooms/rooms.html">Rooms</a>
+        <a class="the-same-page">Patients</a>
+        <a href="../About/about.html">About</a>
+
+        <p class="email">
+          Contact us at&nbsp;<a class="email">hospital@gmail.com</a>.
+        </p>
+      </nav>
+    </header>
+
+    <div id="info-container">
+      <div id="sub-container">
+        <div id="patient-image"></div>
+
+        <div id="sub-sub-container">
+          <div id="patient-name">
+            Patient name:&nbsp;
+            <p>John Wasser</p>
+          </div>
+          <div id="patient-address">
+            Address:&nbsp;
+            <p>al-mazzeh</p>
+          </div>
+        </div>
+
+        <!-- <div id="close-info"></div> -->
+      </div>
+
+      <div id="patient-gender">
+        Gender:&nbsp;
+        <p>female</p>
+      </div>
+
+      <div id="patient-birth-date">
+        Birth Date:&nbsp;
+        <p>21/6/2002</p>
+      </div>
+
+      <div id="reserved-appointment">
+        Reserved appointment:&nbsp;
+        <p>ophthalmology-Dr.Alaa Smith</p>
+      </div>
+
+      <div id="time-appointment">
+        Time appointment:&nbsp;
+        <p>7/8/2023 Monday 3:40pm</p>
+      </div>
+
+      <div id="previous-diseases">
+        Previous diseases:&nbsp;
+        <p>none</p>
+      </div>
+
+      <div>
+        <div id="reserved-room">
+          Reserved room:&nbsp;
+          <p>private-ID: 21</p>
+        </div>
+        <div id="doctors-visited">
+          Doctors visited: &nbsp;
+          <p>Dr.Alaa Smith</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="patients-list"></div> -->
+  </body>
+</html>

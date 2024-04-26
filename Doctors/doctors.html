@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctors</title>
+
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link rel="stylesheet" href="doctors.css">
+    <script defer src="../navbar.js"></script>
+    <script defer src="doctors.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <button id="open-nav-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <h3>Al-Salam Hospital</h3>
+
+        <div class="button-displayer">
+            <a href="../Sign up/signUp.html"><button id="sign-up">Sign up</button></a>
+            <a href="../Login/login.html"> <button id="login">Login</button></a>
+        </div>
+
+        <nav id="nav" class="closed">
+            <button id="close-nav-button">
+                <div></div>
+                <div></div>
+            </button>
+
+            <a href="../index/index.html">Home Page</a>
+            <a class="the-same-page">Doctors</a>
+            <a href="../Rooms/rooms.html">Rooms</a>
+            <a href="../Patients/patients.html">Patients</a>
+            <a href="../About/about.html">About</a>
+
+            <p class="email">Contact us at&nbsp;<a class="email">hospital@gmail.com</a>.</p>
+        </nav>
+    </header>
+
+
+    <div id="medical-specialties-container">
+        <button>
+            <div>Cardiology</div>
+            <div> <img src="../Images/anatomical_heart_48px.png" class="specialties-images"></div>
+        </button>
+        <button>
+            <div>Pulmonology</div>
+            <div><img src="../Images/lung.jpeg" class="specialties-images radius"></div>
+        </button>
+        <button>
+            <div>Neurology</div>
+            <div> <img src="../Images/artificial_intelligence_96px.png" class="specialties-images"></div>
+        </button>
+        <button>
+            <div>Orthopedics</div>
+            <div><img src="../Images/human_bone_40px.png" class="specialties-images"></div>
+        </button>
+        <button>
+            <div>Oncology</div>
+            <div><img src="../Images/tumor.jpeg" class="specialties-images radius"></div>
+        </button>
+        <button>
+            <div>Dermatology</div>
+            <div><img src="../Images/skin.jpeg" class="specialties-images radius"></div>
+        </button>
+        <button>
+            <div>Otolaryngology</div>
+            <div><img src="../Images/ear_with_hearing_aid_48px.png" class="specialties-images"></div>
+        </button>
+        <button>
+            <div>Ophthalmology</div>
+            <div><img src="../Images/eyes_cartoon_48px.png" class="specialties-images"></div>
+        </button>
+        <button>
+            <div>Pediatrics</div>
+            <div><img src="../Images/children_96px.png" class="specialties-images"></div>
+        </button>
+    </div>
+
+
+    <div id="doctor-information" class="hidden">
+        <button id="close"></button>
+        <div class="doctor-img"></div>
+        <div id="doctor-name">
+            <div class="title"></div>
+        </div>
+        <div id="doctor-info">
+            <div class="title"></div>
+        </div>
+        <div id="doctor-time-attendance">
+            <div class="title"></div>
+        </div>
+
+        <div class="booked"></div>
+        <button id="reserve">Book</button>
+    </div>
+
+    <div id="cover"></div>
+
+    </div>
+
+</body>
+
+</html>

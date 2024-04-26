@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency</title>
+
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link rel="stylesheet" href="emergency.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script defer src="../navbar.js"></script>
+    <script defer src="emergency.js"></script>
+</head>
+
+<body>
+    <header>
+        <button id="open-nav-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <h3>Al-Salam Hospital</h3>
+
+        <nav id="nav" class="closed">
+            <button id="close-nav-button">
+                <div></div>
+                <div></div>
+            </button>
+
+            <a href="../index/index.html">Home Page</a>
+            <a href="../Doctors/doctors.html">Doctors</a>
+            <a href="../Rooms/rooms.html">Rooms</a>
+            <a href="../Patients/patients.html">Patients</a>
+            <a href="../About/about.html">About</a>
+
+            <p class="email">Contact us at&nbsp;<a class="email">hospital@gmail.com</a>.</p>
+        </nav>
+    </header>
+
+    <form id="ambulance-form">
+        <div>
+            <input type="text" placeholder="">
+            <label>User name</label>
+        </div>
+        <div>
+            <input type="text" placeholder="">
+            <label>Location</label>
+        </div>
+        <div>
+            <input type="text" placeholder="">
+            <label>Patient State</label>
+        </div>
+        <button id="submit-button" type="submit">Submit</button>
+    </form>
+
+    <div id="paragraph" class="hidden">there is no need to be worried, the ambulance is coming...</div>
+
+    <img id="ambulance-image" src="../Images/ambulance-ambulanceemoji.gif">
+    <div id="line"></div>
+
+</body>
+
+</html>

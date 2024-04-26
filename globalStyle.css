@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(to top, #6eacc9, #FFF);
+    color: #FFF;
+
+    margin: 0;
+
+    min-height: 100vh;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: transform 0.5s;
+}
+
+button:is(:hover, :focus) {
+    transform: scale(1.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}

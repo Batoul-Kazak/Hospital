@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh;
+
+    margin: 0;
+
+    color: white;
+    background-color: #FFF;
+    background-image: url(../Images/hospital_img4.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: right center;
+    background-size: 700px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #76b7ec;
+    padding: 10px;
+
+    display: flex;
+    gap: 20px;
+    place-items: center;
+}
+
+#emergency-button {
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+
+    padding: 15px 25px;
+
+    font-size: 20px;
+    text-shadow: 2px 2px #333;
+
+    background-color: #db4465;
+}
+
+#prg {
+
+    position: absolute;
+    top: 30%;
+    padding-left: 70px;
+    color: #555;
+
+}
+
+#prg h4 {
+
+    color: rgb(14, 14, 109);
+    font-size: xx-large;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}

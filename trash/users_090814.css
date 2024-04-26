@@ -1,0 +1,69 @@
+
+div#nav1{
+   margin-top: 10px;
+     background-image: linear-gradient(to top, #36ade4, #FFF);
+   position: absolute;
+   top: 70px;
+   left: 24%;
+
+   width: 300px;
+   height: 550px;
+
+    
+   display: flex;
+   flex-direction: column;
+   place-content: center;
+   place-items: center;
+   gap: 20px;
+
+}
+
+div#nav1 img {
+
+    width: 50px;
+    height: 50px;
+
+}
+div#container{
+
+    display: flex;
+   flex-direction: row;
+   place-content: center;
+   place-items: center;
+   gap: 20px;
+
+
+   color: rgb(18, 92, 161);
+   font-size: 22px;
+}
+
+div#ifno-container{
+
+    background-image: linear-gradient(to top, #36ade4, #FFF);
+    width: 500;
+    height: 510px;
+
+    position: absolute;
+    top: 80px;
+    left: 45%;
+    
+   display: flex;
+   flex-direction: column;
+   place-content: center;
+   place-items:start center ;
+   gap: 50px;
+
+   color: rgb(18, 92, 161);
+   font-size: 20px;
+
+   padding: 20px;
+
+}
+div img#person{
+     
+    padding-bottom: 50px;
+    width: 80px;
+    height: 80px;
+
+}
+

@@ -1,0 +1,166 @@
+body header {
+    background-color: #76b7ec;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    place-content: center start;
+    place-items: center start;
+
+    padding-right: 30px;
+}
+
+header h3 {
+    text-shadow: 5px 3px 3px #555;
+    margin-left: 15px;
+}
+
+header :is(#sign-up, #login) {
+    background-image: linear-gradient(30deg, #dcdfeb, #3292be);
+
+    padding: 10px;
+    color: #555;
+
+    font-weight: bold;
+}
+
+header #sign-up {
+    margin-right: 10px;
+}
+
+body header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    min-height: calc(100vh - 100px);
+    min-width: 15vw;
+    width: min-content;
+
+    font-weight: bold;
+
+    padding: 30px;
+    padding-top: 70px;
+
+    background-color: #4aa1e7;
+
+    transition: transform 0.5s;
+
+    z-index: 1;
+}
+
+body header nav #close-nav-button {
+    background-color: inherit;
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    transition: transform 0.5s;
+}
+
+body header nav #close-nav-button:is(:hover, :focus) {
+    transform: rotate(90deg);
+}
+
+body header nav #close-nav-button div {
+    background-color: white;
+    border-radius: 4px;
+
+    width: 100%;
+    height: 20%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+body header nav #close-nav-button div:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+body header nav #close-nav-button div:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+body header nav.closed {
+    transform: translateX(-100%);
+}
+
+body header #open-nav-button {
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+body header #open-nav-button div {
+    background-color: white;
+
+    border-radius: 4px;
+
+    transition: transform 0.5s;
+}
+
+body header #open-nav-button:is(:hover, :focus) div:nth-child(2) {
+    transform: translateX(-12.5%);
+}
+
+body header #open-nav-button:is(:hover, :focus) div:not(:nth-child(2)) {
+    transform: translateX(12.5%);
+}
+
+body header nav>a {
+    transition: transform 0.5s;
+
+    padding: 10px;
+}
+
+body header nav>a:is(:hover, :focus) {
+    background-image: linear-gradient(to left, #ffffff65, transparent);
+    transform: translateX(30px);
+}
+
+body header nav p {
+    flex-grow: 1;
+    display: flex;
+    /* place-content: end; */
+    place-items: end;
+    width: max-content;
+}
+
+body header nav p a {
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    transition: transform 0.5s;
+}
+
+.the-same-page {
+    color: rgb(0, 26, 255);
+    background-color: rgba(0, 0, 0, 0.103);
+}

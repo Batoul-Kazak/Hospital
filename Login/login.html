@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../signInAndLogin.css">
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script defer src="../navbar.js"></script>
+    <script defer src="signUp.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <button id="open-nav-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <h3>Al-Salam Hospital</h3>
+
+        <nav id="nav" class="closed">
+            <button id="close-nav-button">
+                <div></div>
+                <div></div>
+            </button>
+
+            <a href="../index/index.html">Home</a>
+            <a href="../Doctors/doctors.html">Doctors</a>
+            <a href="../Rooms/rooms.html">Rooms</a>
+            <a href="../Patients/patients.html">Patients</a>
+            <a href="../About/about.html">About</a>
+
+            <p class="email">Contact us at&nbsp;<a class="email">hospital@gmail.com</a>.</p>
+        </nav>
+    </header>
+
+    <form>
+        <main>
+            <header style="background-color: #FFF;">
+                <h1>Login</h1>
+            </header>
+
+            <div id="input-container">
+                <div>
+                    <input type="email" id="email" placeholder="" required />
+                    <label>Email</label>
+                    <div class="check-mark"></div>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="" required minlength="8" />
+                    <label>Password</label>
+                    <div class="check-mark"></div>
+                </div>
+            </div>
+
+            <button type="submit" id="sign-up-button">Login</button>
+
+            <div id="already-sign-in">
+                <p>Do haven't an account</p>
+                <a href="../Sign up/signUp.html">Sign up</a>
+            </div>
+        </main>
+
+        <img id="image" src="../Images/istockphoto-1312423123-612x612.jpg">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+body {
+    background-image: url(../Images/hospital_img4.png);
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: 700px;
+}
+
+body #container {
+    margin: 15px;
+    width: 500px;
+    height: 460px;
+
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(159, 187, 238));
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    border: 10px ridge rgb(55, 159, 207);
+    border-style: ridge;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #555;
+
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: start;
+    gap: 20px;
+
+    box-shadow: 8px 8px 5px #888;
+}
+
+
+div#container#container h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(16, 16, 104);
+    text-shadow: 5px 5px 4px #888;
+
+}
+
+div#container p#title {
+    color: rgb(77, 114, 184);
+    font-weight: bold;
+}
+
+#links-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: start;
+}
+
+#links-container div {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+
+    font-size: 17px;
+
+    padding-top: 5px;
+}
+
+div img {
+    width: 32px;
+    height: 32px;
+}

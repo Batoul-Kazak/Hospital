@@ -1,0 +1,209 @@
+form {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* background-color: white; */
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+
+    border-radius: 20px;
+
+    color: #333;
+}
+
+form main {
+    /* 
+
+    width: 400px;
+        height: 380px; */
+    --padding: 3rem 3rem;
+
+    padding: var(--padding);
+    width: calc(100% - var(--padding) * 2);
+
+    background-color: white;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1.5rem;
+}
+
+form main header {
+    justify-self: start;
+    margin-bottom: -1.5rem;
+}
+
+form main header p {
+    color: gray;
+}
+
+form main #input-container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    margin-top: 3rem;
+
+    border-bottom: 2px solid #666;
+}
+
+#input-container input {
+    width: 250px;
+
+    border: none;
+    border-bottom: 0.2rem solid var(--main-colour);
+    padding: 0.5rem;
+}
+
+#input-container>div label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    color: gray;
+    transition: 500ms top;
+    pointer-events: none;
+}
+
+#input-container>div input:is(:focus, :not(:placeholder-shown))+label {
+    top: -50%;
+}
+
+#input-container>div .check-mark {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-50%);
+    /* width: 2rem; */
+    width: 17.5px;
+    aspect-ratio: 1;
+
+    background-color: rgb(110, 255, 110);
+    color: white;
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+}
+
+#input-container>div .check-mark::after {
+    content: "✓";
+}
+
+#input-container input:is(:invalid, :placeholder-shown)~.check-mark {
+    background-color: rgb(255, 125, 136);
+}
+
+#input-container input:is(:invalid, :placeholder-shown)~.check-mark::after {
+    content: "✖";
+}
+
+form main #terms-checkbox input[type=checkbox] {
+    display: none;
+}
+
+form main #terms-checkbox label {
+    position: relative;
+    font-size: smaller;
+}
+
+form main #terms-checkbox label a {
+    color: var(--main-colour);
+    font-weight: bold;
+}
+
+form main #terms-checkbox label::before,
+form main #terms-checkbox label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.8rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+form main #terms-checkbox label::before {
+    border: 0.2rem solid var(--main-colour);
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    transition: 500ms background-color;
+}
+
+form main #terms-checkbox input:checked+label::before {
+    background-color: var(--main-colour);
+}
+
+form main #terms-checkbox input:checked+label::after {
+    content: "✓";
+    display: flex;
+    place-content: center;
+    place-items: center;
+
+    color: #FFF;
+    font-size: smaller;
+}
+
+form main #sign-up-button {
+    border: none;
+    background-color: rgb(103, 166, 190) !important;
+    padding: 10px;
+    border-radius: 100vh;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form main #sign-up-button {
+    width: 70%;
+
+    border: none;
+    background-color: var(--main-colour);
+    padding: 1rem;
+    border-radius: 100vh;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+form main #sign-up-button a {
+    text-decoration: none;
+    color: white;
+}
+
+form main #already-sign-up {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    gap: 1ch;
+    font-size: smaller;
+}
+
+form main #already-sign-up a {
+    text-decoration: none;
+    color: var(--main-colour);
+    font-weight: bold;
+}
+
+form #image {
+    height: 456px;
+    width: 350px;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
